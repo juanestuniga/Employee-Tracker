@@ -14,6 +14,11 @@
   * [Tests](#tests)
   * [License](#license)
   
+
+  ## Screenshot
+
+  ![](assets/images/screenshot.png)
+
   ## Installation
   
   
