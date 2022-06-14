@@ -8,7 +8,7 @@ const connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password: "20624763", 
+  password: "PUT PASSWORD", 
   database: "employeedb"
 });
 // header
@@ -333,7 +333,7 @@ function updateEmployeeRole() {
                   {
                       roleID: roleId
                   },
-                  
+
                   {lastName: answers.lastName}
                 ],
                   function (err) {
