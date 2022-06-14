@@ -328,12 +328,14 @@ function updateEmployeeRole() {
               },
           ]).then(function (answers) {
               var roleId = selectRole().indexOf(answers.role) + 1;
-              connection.query("UPDATE employees SET WHERE = ?",
+              connection.query("UPDATE employees SET ? WHERE ?",
+              [
                   {
-                      lastName: answers.lastName,
                       roleID: roleId
                   },
-      
+                  
+                  {lastName: answers.lastName}
+                ],
                   function (err) {
                       if (err)
                           throw err;
